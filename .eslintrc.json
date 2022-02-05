@@ -10,7 +10,12 @@
     "object-shorthand": "off",
     "class-methods-use-this": "off",
     "react/function-component-definition": "off",
-    "arrow-body-style": "off"
+    "arrow-body-style": "off",
+    "no-compare-neg-zero": "warn",
+    "no-self-assign": "warn",
+    "no-self-compare": "warn",
+    "eqeqeq": "warn",
+    "no-duplicate-imports": "error"
   },
   "parserOptions": {
     "sourceType": "module",
