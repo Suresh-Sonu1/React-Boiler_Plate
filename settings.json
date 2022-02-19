@@ -31,5 +31,106 @@
   "material-icon-theme.folders.color": "#FF4500",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.activeIconPack": "react_redux",
-  "material-icon-theme.hidesExplorerArrows": false
+  "material-icon-theme.hidesExplorerArrows": false,
+  "workbench.colorCustomizations": {
+    "terminal.background": "#090300",
+    "terminal.foreground": "#A5A2A2",
+    "terminalCursor.background": "#A5A2A2",
+    "terminalCursor.foreground": "#A5A2A2",
+    "terminal.ansiBlack": "#090300",
+    "terminal.ansiBlue": "#01A0E4",
+    "terminal.ansiBrightBlack": "#5C5855",
+    "terminal.ansiBrightBlue": "#01A0E4",
+    "terminal.ansiBrightCyan": "#B5E4F4",
+    "terminal.ansiBrightGreen": "#01A252",
+    "terminal.ansiBrightMagenta": "#A16A94",
+    "terminal.ansiBrightRed": "#DB2D20",
+    "terminal.ansiBrightWhite": "#F7F7F7",
+    "terminal.ansiBrightYellow": "#FDED02",
+    "terminal.ansiCyan": "#B5E4F4",
+    "terminal.ansiGreen": "#01A252",
+    "terminal.ansiMagenta": "#A16A94",
+    "terminal.ansiRed": "#DB2D20",
+    "terminal.ansiWhite": "#A5A2A2",
+    "terminal.ansiYellow": "#FDED02"
+  },
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": false,
+  "todohighlight.keywords": [
+    {
+      "text": "INFO:",
+      "color": "#ffffff",
+      "borderRadius": "5px",
+      "backgroundColor": "#d64161",
+      "overviewRulerColor": "grey",
+      "fontWeight": "500",
+      "fontFamily": "'Poppins', sans-serif",
+      "border": "none",
+      "textTransform": "uppercase"
+    },
+    {
+      "text": "REMOVE_LATER:",
+      "color": "#ffffff",
+      "borderRadius": "5px",
+      "backgroundColor": "red",
+      "overviewRulerColor": "grey",
+      "fontWeight": "500",
+      "fontFamily": "'Poppins', sans-serif",
+      "border": "none"
+    },
+    {
+      "text": "DONT_REMOVE:",
+      "color": "#ffffff",
+      "borderRadius": "5px",
+      "backgroundColor": "#82b74b",
+      "overviewRulerColor": "grey",
+      "fontWeight": "500",
+      "fontFamily": "'Poppins', sans-serif",
+      "border": "none"
+    },
+    {
+      "text": "NOTE:",
+      "color": "black",
+      "borderRadius": "5px",
+      "backgroundColor": "#feb236",
+      "overviewRulerColor": "grey",
+      "fontWeight": "500",
+      "fontFamily": "'Poppins', sans-serif",
+      "border": "none"
+    }
+  ],
+  "todohighlight.defaultStyle": {
+    "color": "red",
+    "backgroundColor": "#ffab00",
+    "overviewRulerColor": "#ffab00",
+    "cursor": "pointer",
+    "border": "1px solid #eee",
+    "borderRadius": "2px",
+    "isWholeLine": true
+  },
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "todohighlight.exclude": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.vscode/**",
+    "**/.github/**",
+    "**/_output/**",
+    "**/*.min.*",
+    "**/*.map",
+    "**/.next/**",
+    "**/.json/**"
+  ],
+  "todohighlight.maxFilesForSearch": 5120,
+  "todohighlight.toggleURI": false
 }

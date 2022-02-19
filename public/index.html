@@ -4,6 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
@@ -14,10 +19,22 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <!-- For creating react portal for popup windows -->
   <div id="modal"></div>
+  <!-- For creating react portal for global loader for react app -->
   <div id="loader"></div>
+  <!-- For rendering the whole react-app using reactDOM -->
   <div id="root"></div>
-
+  <script>
+    // Info: This is used for creating Progressive web app (PWA).
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./serviceworker.js')
+          .then(reg => console.log("Successfully registered at ", reg.scope))
+          .catch(err => console.log("Error in registering service worker", err))
+      })
+    }
+  </script>
 </body>
 
 </html>
