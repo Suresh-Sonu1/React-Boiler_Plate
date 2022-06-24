@@ -11,7 +11,8 @@
   "tabnine.experimentalAutoImports": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontWeight": "430",
-  "editor.fontLigatures": true,
+  // "editor.fontLigatures": true,
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "[html]": {
