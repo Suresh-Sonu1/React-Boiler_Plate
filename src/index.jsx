@@ -1,7 +1,9 @@
 import React, { Profiler, StrictMode } from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import store from './Redux/store';
 import './index.css';
 
 function profilerCallback(
@@ -26,11 +28,13 @@ function profilerCallback(
 
 const contentElement = (
   <StrictMode>
-    <BrowserRouter>
-      <Profiler id="rootProfiler" onRender={profilerCallback}>
-        <App />
-      </Profiler>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Profiler id="rootProfiler" onRender={profilerCallback}>
+          <App />
+        </Profiler>
+      </BrowserRouter>
+    </Provider>
   </StrictMode>
 );
 const targetElement = document.getElementById('root');
